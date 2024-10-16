@@ -1,0 +1,97 @@
+/* LoginPage.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0D0C0D, #595859);
+    position: relative;
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for the login box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding around the content */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+  }
+  
+  /* Title styling */
+  .login-title {
+    color: #D9D9D9; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2rem; /* Title size */
+    text-align: center; /* Center align title */
+  }
+  
+  /* Input styling */
+  .login-input {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Input font size */
+    outline: none; /* Remove outline on focus */
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    color: #fff; /* Text color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Placeholder styling */
+  .login-input::placeholder {
+    color: #D9D9D9; /* Placeholder text color */
+  }
+  
+  /* Input focus effect */
+  .login-input:focus {
+    background-color: rgba(255, 255, 255, 0.3); /* Change background on focus */
+    transform: scale(1.02); /* Slightly enlarge input on focus */
+  }
+  
+  /* Button styling */
+  .login-button {
+    padding: 12px; /* Padding inside button */
+    font-size: 1rem; /* Button font size */
+    background-color: #8C8B8C; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full width */
+  }
+  
+  /* Button hover effect */
+  .login-button:hover {
+    background-color: #D9D9D9; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Add background animations for a more interactive and attractive look */
+  .animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(13, 12, 13, 0.7), rgba(89, 88, 89, 0.7));
+    animation: backgroundMove 8s infinite;
+    z-index: -1;
+  }
+  
+  @keyframes backgroundMove {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
